@@ -9,7 +9,6 @@ class Registers {
         private val REFLECTIONS = Reflections(Scanners.MethodsAnnotated, Scanners.TypesAnnotated)
 
         fun <T> getRegisterInterface(register: Class<*>): Class<T> {
-            print("")
             return register.interfaces[0] as Class<T>
         }
 
