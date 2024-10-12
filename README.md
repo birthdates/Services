@@ -136,8 +136,6 @@ class CorePlayerService : PlayerService {
 }
 ```
 
-```kotlin
-
 ### Accessing a Service
 To access a service, you can use the `Services` class.
 Using the examples above, we can access the `PlayerService` like so:
