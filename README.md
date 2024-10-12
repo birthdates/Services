@@ -121,7 +121,7 @@ For example:
 **Java**
 ```java
 @Register
-@Depends(DatabaseService.class)
+@Depends({DatabaseService.class})
 public class CorePlayerService implements PlayerService {
     // ...
 }
@@ -130,7 +130,7 @@ public class CorePlayerService implements PlayerService {
 **Kotlin**
 ```kotlin
 @Register
-@Depends(DatabaseService::class)
+@Depends([DatabaseService::class])
 class CorePlayerService : PlayerService {
     // ...
 }
