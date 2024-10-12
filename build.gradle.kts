@@ -8,6 +8,7 @@ group = "com.birthdates"
 version = "1.0.0"
 
 repositories {
+    mavenLocal()
     mavenCentral()
 }
 
@@ -15,9 +16,6 @@ dependencies {
     implementation("org.reflections:reflections:0.10.2")
 }
 
-tasks.test {
-    useJUnitPlatform()
-}
 kotlin {
     jvmToolchain(21)
 }

@@ -1,5 +1,5 @@
 # Services
-A simple library to handle service-based applications.
+A simple Kotlin library to handle service-based applications.
 
 ## Adding to Your Project
 To add this library to your project, you need to clone this repository and build the project using Gradle.
@@ -150,4 +150,6 @@ PlayerService playerService = Services.get(PlayerService.class);
 **Kotlin**
 ```kotlin
 val playerService = Services.get(PlayerService::class)
+// or
+val playerService: PlayerService = Services.fetch()
 ```

@@ -1,7 +1,6 @@
 package com.birthdates.service
 
 import com.birthdates.service.impl.CoreServiceManager
-import com.sun.org.apache.xerces.internal.utils.ObjectFactory
 
 class Services {
     companion object {
@@ -9,6 +8,10 @@ class Services {
 
         fun load() {
             serviceManager.registerAllServices()
+        }
+
+        inline fun <reified T : Service> fetch(): T {
+            return get(T::class.java)
         }
 
         fun <T : Service> get(serviceType: Class<T>): T {
